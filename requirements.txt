@@ -1,0 +1,13 @@
+# Google Colab provides most of these; versions are minimums, not pins.
+torch>=2.1
+transformers>=4.40
+huggingface_hub>=0.23
+numpy
+pandas
+pyarrow
+scipy
+scikit-learn
+matplotlib
+soundfile
+librosa
+pyvi        # Vietnamese word segmentation for the PhoBERT baseline (notebook 02)

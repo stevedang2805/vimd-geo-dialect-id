@@ -1,0 +1,493 @@
+{
+ "lp": {
+  "ls_13layers": {
+   "valid": {
+    "acc": 0.5584826132771338,
+    "macro_f1": 0.5487797036800014,
+    "top5": 0.80927291886196,
+    "region_acc": 0.8582718651211801,
+    "mean_err_km": 165.68704716201182,
+    "within_100km": 0.6554267650158061,
+    "expected_km": 430.6320056414534
+   },
+   "test": {
+    "acc": 0.5399802566633761,
+    "macro_f1": 0.5349651298285305,
+    "top5": 0.7754195459032577,
+    "region_acc": 0.8637709772951628,
+    "mean_err_km": 154.57261692043073,
+    "within_100km": 0.6515301085883515,
+    "expected_km": 431.4855774658021
+   }
+  },
+  "ls_25layers": {
+   "valid": {
+    "acc": 0.5405690200210748,
+    "macro_f1": 0.5255669564868616,
+    "top5": 0.8008429926238145,
+    "region_acc": 0.8514225500526871,
+    "mean_err_km": 167.82882139352662,
+    "within_100km": 0.6401475237091675,
+    "expected_km": 421.9369414497258
+   },
+   "test": {
+    "acc": 0.5153010858835143,
+    "macro_f1": 0.5100263851981095,
+    "top5": 0.7808489634748272,
+    "region_acc": 0.87857847976308,
+    "mean_err_km": 150.8617546985067,
+    "within_100km": 0.6544916090819348,
+    "expected_km": 419.3974130012428
+   }
+  },
+  "geols_13layers": {
+   "valid": {
+    "acc": 0.5511064278187566,
+    "macro_f1": 0.5394562153161014,
+    "top5": 0.8208640674394099,
+    "region_acc": 0.8946259220231823,
+    "mean_err_km": 127.90239467697543,
+    "within_100km": 0.6754478398314014,
+    "expected_km": 225.3779114872507
+   },
+   "test": {
+    "acc": 0.5153010858835143,
+    "macro_f1": 0.5104684063348668,
+    "top5": 0.7976307996051333,
+    "region_acc": 0.8968410661401777,
+    "mean_err_km": 128.39843826671924,
+    "within_100km": 0.6574531095755183,
+    "expected_km": 218.61337909336328
+   }
+  },
+  "geols_25layers": {
+   "valid": {
+    "acc": 0.541622760800843,
+    "macro_f1": 0.5271893139712732,
+    "top5": 0.7871443624868283,
+    "region_acc": 0.8872497365648051,
+    "mean_err_km": 131.18737643538498,
+    "within_100km": 0.6638566912539515,
+    "expected_km": 227.48994963140737
+   },
+   "test": {
+    "acc": 0.5029615004935835,
+    "macro_f1": 0.4969914401401856,
+    "top5": 0.782329713721619,
+    "region_acc": 0.9027640671273445,
+    "mean_err_km": 125.53182991377396,
+    "within_100km": 0.6549851924975321,
+    "expected_km": 220.15404208395813
+   }
+  }
+ },
+ "results": {
+  "lpft12_ls_0.3": {
+   "epoch": 12,
+   "best_valid": 0.5574288724973656,
+   "history": [
+    {
+     "epoch": 0,
+     "train_loss": null,
+     "valid_acc": 0.5574288724973656,
+     "valid_macro_f1": 0.5475331174335429,
+     "valid_top5": 0.8113804004214963,
+     "valid_region_acc": 0.8582718651211801,
+     "valid_mean_err_km": 165.2944962646124,
+     "valid_within_100km": 0.654899894625922,
+     "valid_expected_km": 430.4048265591463,
+     "minutes": 0.6137798269589742,
+     "new_best": true
+    },
+    {
+     "epoch": 1,
+     "train_loss": 2.684413858822414,
+     "valid_acc": 0.45995785036880926,
+     "valid_macro_f1": 0.4553672310476234,
+     "valid_top5": 0.7365648050579557,
+     "valid_region_acc": 0.8177028451001054,
+     "valid_mean_err_km": 200.94908628723596,
+     "valid_within_100km": 0.5547945205479452,
+     "valid_expected_km": 342.6915584234848,
+     "minutes": 6.439168624083201
+    },
+    {
+     "epoch": 2,
+     "train_loss": 2.581784712988685,
+     "valid_acc": 0.4130663856691254,
+     "valid_macro_f1": 0.41594560819342746,
+     "valid_top5": 0.7170706006322445,
+     "valid_region_acc": 0.8113804004214963,
+     "valid_mean_err_km": 243.71109537187948,
+     "valid_within_100km": 0.48735511064278186,
+     "valid_expected_km": 340.507025031219,
+     "minutes": 6.441275004545847
+    },
+    {
+     "epoch": 3,
+     "train_loss": 2.4808637132522646,
+     "valid_acc": 0.42992623814541625,
+     "valid_macro_f1": 0.43260645192588093,
+     "valid_top5": 0.7360379346680717,
+     "valid_region_acc": 0.8303477344573235,
+     "valid_mean_err_km": 196.22053987324483,
+     "valid_within_100km": 0.5384615384615384,
+     "valid_expected_km": 306.8879808837891,
+     "minutes": 6.440165976683299
+    },
+    {
+     "epoch": 4,
+     "train_loss": 2.41215733500686,
+     "valid_acc": 0.46469968387776606,
+     "valid_macro_f1": 0.4705912582194039,
+     "valid_top5": 0.7644889357218124,
+     "valid_region_acc": 0.8350895679662803,
+     "valid_mean_err_km": 191.5370244196753,
+     "valid_within_100km": 0.565331928345627,
+     "valid_expected_km": 298.17698323291114,
+     "minutes": 6.439781069755554
+    },
+    {
+     "epoch": 5,
+     "train_loss": 2.352234412866361,
+     "valid_acc": 0.48840885142255,
+     "valid_macro_f1": 0.4919366319310464,
+     "valid_top5": 0.7755532139093783,
+     "valid_region_acc": 0.8477344573234984,
+     "valid_mean_err_km": 176.76389621150005,
+     "valid_within_100km": 0.59536354056902,
+     "valid_expected_km": 312.37508965989895,
+     "minutes": 6.443003424008688
+    },
+    {
+     "epoch": 6,
+     "train_loss": 2.2907946973975535,
+     "valid_acc": 0.48366701791359323,
+     "valid_macro_f1": 0.48897712258900705,
+     "valid_top5": 0.7734457323498419,
+     "valid_region_acc": 0.8303477344573235,
+     "valid_mean_err_km": 182.66405699917334,
+     "valid_within_100km": 0.5848261327713382,
+     "valid_expected_km": 305.84321053180537,
+     "minutes": 6.438087209065755
+    },
+    {
+     "epoch": 7,
+     "train_loss": 2.2426338007709363,
+     "valid_acc": 0.4931506849315068,
+     "valid_macro_f1": 0.49587515248101055,
+     "valid_top5": 0.7723919915700738,
+     "valid_region_acc": 0.8350895679662803,
+     "valid_mean_err_km": 181.80338544040788,
+     "valid_within_100km": 0.5969441517386723,
+     "valid_expected_km": 308.4820296663712,
+     "minutes": 6.437649313608805
+    },
+    {
+     "epoch": 8,
+     "train_loss": 2.197535536944993,
+     "valid_acc": 0.5015806111696522,
+     "valid_macro_f1": 0.5018862083593353,
+     "valid_top5": 0.7792413066385669,
+     "valid_region_acc": 0.8556375131717597,
+     "valid_mean_err_km": 170.9910525061507,
+     "valid_within_100km": 0.6022128556375131,
+     "valid_expected_km": 320.2782038154186,
+     "minutes": 6.431983415285746
+    },
+    {
+     "epoch": 9,
+     "train_loss": 2.17195915997918,
+     "valid_acc": 0.5026343519494204,
+     "valid_macro_f1": 0.5016920234202299,
+     "valid_top5": 0.7829293993677555,
+     "valid_region_acc": 0.839304531085353,
+     "valid_mean_err_km": 180.31825058743834,
+     "valid_within_100km": 0.601159114857745,
+     "valid_expected_km": 314.53216364012496,
+     "minutes": 6.434330844879151
+    },
+    {
+     "epoch": 10,
+     "train_loss": 2.1494114259158623,
+     "valid_acc": 0.505795574288725,
+     "valid_macro_f1": 0.5069238945630196,
+     "valid_top5": 0.7787144362486829,
+     "valid_region_acc": 0.8414120126448894,
+     "valid_mean_err_km": 179.63120152488318,
+     "valid_within_100km": 0.601159114857745,
+     "valid_expected_km": 322.1485141030211,
+     "minutes": 6.438093483448029
+    },
+    {
+     "epoch": 11,
+     "train_loss": 2.135516292250741,
+     "valid_acc": 0.5089567966280295,
+     "valid_macro_f1": 0.5088414977314526,
+     "valid_top5": 0.7787144362486829,
+     "valid_region_acc": 0.8445732349841939,
+     "valid_mean_err_km": 177.0878497170959,
+     "valid_within_100km": 0.601159114857745,
+     "valid_expected_km": 320.3696770981271,
+     "minutes": 6.434789474805196
+    },
+    {
+     "epoch": 12,
+     "train_loss": 2.1282063201546415,
+     "valid_acc": 0.5,
+     "valid_macro_f1": 0.5009188609329389,
+     "valid_top5": 0.773972602739726,
+     "valid_region_acc": 0.8408851422550052,
+     "valid_mean_err_km": 179.83752194247634,
+     "valid_within_100km": 0.5927291886195996,
+     "valid_expected_km": 322.63992596769907,
+     "minutes": 6.437116909027099
+    }
+   ],
+   "best": {
+    "epoch": 0,
+    "test_acc": 0.5365251727541954,
+    "test_macro_f1": 0.531776594042953,
+    "test_top5": 0.7759131293188549,
+    "test_region_acc": 0.8637709772951628,
+    "test_mean_err_km": 155.88859553154074,
+    "test_within_100km": 0.6525172754195459,
+    "test_expected_km": 431.26151611122833
+   }
+  },
+  "lpft12_geols_0.3_200.0": {
+   "epoch": 12,
+   "best_valid": 0.5547945205479452,
+   "history": [
+    {
+     "epoch": 0,
+     "train_loss": null,
+     "valid_acc": 0.5547945205479452,
+     "valid_macro_f1": 0.5429317783466007,
+     "valid_top5": 0.8208640674394099,
+     "valid_region_acc": 0.898840885142255,
+     "valid_mean_err_km": 125.82777242758165,
+     "valid_within_100km": 0.678082191780822,
+     "valid_expected_km": 225.13743443243587,
+     "minutes": 0.5817676266034444,
+     "new_best": true
+    },
+    {
+     "epoch": 1,
+     "train_loss": 2.5562052894502814,
+     "valid_acc": 0.3719704952581665,
+     "valid_macro_f1": 0.374161362852595,
+     "valid_top5": 0.7086406743940991,
+     "valid_region_acc": 0.8187565858798735,
+     "valid_mean_err_km": 212.0394630086384,
+     "valid_within_100km": 0.49683877766069545,
+     "valid_expected_km": 250.52396915416233,
+     "minutes": 6.431717650095622
+    },
+    {
+     "epoch": 2,
+     "train_loss": 2.4414524940539524,
+     "valid_acc": 0.38198103266596417,
+     "valid_macro_f1": 0.38333515437540605,
+     "valid_top5": 0.6991570073761855,
+     "valid_region_acc": 0.8282402528977871,
+     "valid_mean_err_km": 228.6822199425415,
+     "valid_within_100km": 0.4910432033719705,
+     "valid_expected_km": 262.78369606966584,
+     "minutes": 6.446878437201182
+    },
+    {
+     "epoch": 3,
+     "train_loss": 2.321811097771374,
+     "valid_acc": 0.4272918861959958,
+     "valid_macro_f1": 0.42096524098791527,
+     "valid_top5": 0.7539515279241307,
+     "valid_region_acc": 0.8840885142255005,
+     "valid_mean_err_km": 157.79697522491432,
+     "valid_within_100km": 0.5648050579557429,
+     "valid_expected_km": 198.65398636570254,
+     "minutes": 6.4480513215065
+    },
+    {
+     "epoch": 4,
+     "train_loss": 2.2390327737021294,
+     "valid_acc": 0.4815595363540569,
+     "valid_macro_f1": 0.48467538166760427,
+     "valid_top5": 0.8008429926238145,
+     "valid_region_acc": 0.8935721812434141,
+     "valid_mean_err_km": 129.65169681856898,
+     "valid_within_100km": 0.6201264488935722,
+     "valid_expected_km": 176.2128524062467,
+     "minutes": 6.4512395779291785
+    },
+    {
+     "epoch": 5,
+     "train_loss": 2.1690561771392822,
+     "valid_acc": 0.48050579557428874,
+     "valid_macro_f1": 0.4853573623093681,
+     "valid_top5": 0.7839831401475237,
+     "valid_region_acc": 0.880927291886196,
+     "valid_mean_err_km": 141.92396893662956,
+     "valid_within_100km": 0.619072708113804,
+     "valid_expected_km": 187.18892076147822,
+     "minutes": 6.450892396767935
+    },
+    {
+     "epoch": 6,
+     "train_loss": 2.101642881756398,
+     "valid_acc": 0.49894625922023184,
+     "valid_macro_f1": 0.49949252335542277,
+     "valid_top5": 0.8024236037934668,
+     "valid_region_acc": 0.8993677555321391,
+     "valid_mean_err_km": 122.86445590971478,
+     "valid_within_100km": 0.6406743940990516,
+     "valid_expected_km": 168.52541984600018,
+     "minutes": 6.444476898511251
+    },
+    {
+     "epoch": 7,
+     "train_loss": 2.051284820032018,
+     "valid_acc": 0.48366701791359323,
+     "valid_macro_f1": 0.4860768772935535,
+     "valid_top5": 0.7934668071654373,
+     "valid_region_acc": 0.8877766069546892,
+     "valid_mean_err_km": 130.7835935510516,
+     "valid_within_100km": 0.6127502634351949,
+     "valid_expected_km": 173.96447137193806,
+     "minutes": 6.444865838686625
+    },
+    {
+     "epoch": 8,
+     "train_loss": 2.002365818282943,
+     "valid_acc": 0.5031612223393045,
+     "valid_macro_f1": 0.5036022549358682,
+     "valid_top5": 0.8087460484720759,
+     "valid_region_acc": 0.9014752370916754,
+     "valid_mean_err_km": 125.08920731576129,
+     "valid_within_100km": 0.6275026343519494,
+     "valid_expected_km": 172.21761218667723,
+     "minutes": 6.446131960550944
+    },
+    {
+     "epoch": 9,
+     "train_loss": 1.9753950958821311,
+     "valid_acc": 0.5047418335089568,
+     "valid_macro_f1": 0.5023701503174466,
+     "valid_top5": 0.8119072708113804,
+     "valid_region_acc": 0.9067439409905164,
+     "valid_mean_err_km": 120.03970737880437,
+     "valid_within_100km": 0.6364594309799789,
+     "valid_expected_km": 168.68990758122112,
+     "minutes": 6.45262682835261
+    },
+    {
+     "epoch": 10,
+     "train_loss": 1.9533163509897586,
+     "valid_acc": 0.5084299262381454,
+     "valid_macro_f1": 0.5089440235439207,
+     "valid_top5": 0.8124341412012644,
+     "valid_region_acc": 0.9062170706006323,
+     "valid_mean_err_km": 121.21548825574877,
+     "valid_within_100km": 0.6396206533192834,
+     "valid_expected_km": 169.16326888270552,
+     "minutes": 6.452741106351216
+    },
+    {
+     "epoch": 11,
+     "train_loss": 1.9379020223993737,
+     "valid_acc": 0.5126448893572181,
+     "valid_macro_f1": 0.5130389211892322,
+     "valid_top5": 0.809799789251844,
+     "valid_region_acc": 0.9072708113804004,
+     "valid_mean_err_km": 120.04832498643265,
+     "valid_within_100km": 0.6401475237091675,
+     "valid_expected_km": 168.55260520934078,
+     "minutes": 6.451129750410716
+    },
+    {
+     "epoch": 12,
+     "train_loss": 1.9286050795237901,
+     "valid_acc": 0.5052687038988409,
+     "valid_macro_f1": 0.5055168377273126,
+     "valid_top5": 0.80927291886196,
+     "valid_region_acc": 0.9051633298208641,
+     "valid_mean_err_km": 121.35606656024352,
+     "valid_within_100km": 0.6364594309799789,
+     "valid_expected_km": 169.7934202958805,
+     "minutes": 6.448660655816396
+    }
+   ],
+   "best": {
+    "epoch": 0,
+    "test_acc": 0.5133267522211253,
+    "test_macro_f1": 0.5088585176510844,
+    "test_top5": 0.7951628825271471,
+    "test_region_acc": 0.8958538993089832,
+    "test_mean_err_km": 129.32908526501117,
+    "test_within_100km": 0.6559723593287266,
+    "test_expected_km": 218.4842975827373
+   }
+  }
+ },
+ "compare": {
+  "lpft12_ls_0.3 - lpft12_geols_0.3_200.0": {
+   "acc_diff": 0.0232,
+   "acc_ci95": [
+    0.0074,
+    0.04
+   ],
+   "km_diff": 26.6,
+   "km_ci95": [
+    14.5,
+    38.0
+   ]
+  },
+  "lpft12_ls_0.3 - frozen_xlsr_wsum_mlp": {
+   "acc_diff": 0.0449,
+   "acc_ci95": [
+    0.0262,
+    0.0642
+   ],
+   "km_diff": 15.8,
+   "km_ci95": [
+    3.4,
+    28.3
+   ]
+  },
+  "lpft12_geols_0.3_200.0 - frozen_xlsr_wsum_mlp": {
+   "acc_diff": 0.0217,
+   "acc_ci95": [
+    0.0039,
+    0.0395
+   ],
+   "km_diff": -10.7,
+   "km_ci95": [
+    -20.8,
+    -1.1
+   ]
+  }
+ },
+ "losses": [
+  [
+   "ls",
+   "0.3"
+  ],
+  [
+   "geols",
+   "(0.3, 200.0)"
+  ]
+ ],
+ "config": {
+  "model": "facebook/wav2vec2-xls-r-300m",
+  "keep_layers": 12,
+  "epochs": 12,
+  "train_sec": 6.0,
+  "eval_sec": 12.0,
+  "batch": 16,
+  "lr_encoder": 2e-05,
+  "lr_head": 0.0002,
+  "mask_time_prob": 0.05
+ },
+ "gpu": "NVIDIA L4",
+ "total_minutes": 172.3
+}

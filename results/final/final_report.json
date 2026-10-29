@@ -1,0 +1,392 @@
+{
+ "table": [
+  {
+   "model": "B_xlsr|ls",
+   "valid_acc": 0.6217,
+   "valid_macro_f1": 0.6099,
+   "valid_top5": 0.8498,
+   "valid_region_acc": 0.8799,
+   "valid_mean_err_km": 129.3615,
+   "valid_within_100km": 0.7107,
+   "test_acc": 0.575,
+   "test_macro_f1": 0.569,
+   "test_top5": 0.811,
+   "test_region_acc": 0.8894,
+   "test_mean_err_km": 126.6189,
+   "test_within_100km": 0.6915,
+   "acc_ci95": [
+    0.5523,
+    0.5958
+   ],
+   "macro_f1_ci95": [
+    0.546,
+    0.5853
+   ]
+  },
+  {
+   "model": "C_phowhisper|ls",
+   "valid_acc": 0.6407,
+   "valid_macro_f1": 0.6277,
+   "valid_top5": 0.8799,
+   "valid_region_acc": 0.9241,
+   "valid_mean_err_km": 85.423,
+   "valid_within_100km": 0.7482,
+   "test_acc": 0.5844,
+   "test_macro_f1": 0.5751,
+   "test_top5": 0.8425,
+   "test_region_acc": 0.9304,
+   "test_mean_err_km": 98.0412,
+   "test_within_100km": 0.7192,
+   "acc_ci95": [
+    0.5617,
+    0.6051
+   ],
+   "macro_f1_ci95": [
+    0.5502,
+    0.5895
+   ]
+  },
+  {
+   "model": "D_fusion|ls",
+   "valid_acc": 0.697,
+   "valid_macro_f1": 0.6859,
+   "valid_top5": 0.912,
+   "valid_region_acc": 0.9326,
+   "valid_mean_err_km": 79.2906,
+   "valid_within_100km": 0.7835,
+   "test_acc": 0.6417,
+   "test_macro_f1": 0.6347,
+   "test_top5": 0.8559,
+   "test_region_acc": 0.9329,
+   "test_mean_err_km": 87.887,
+   "test_within_100km": 0.7581,
+   "acc_ci95": [
+    0.6204,
+    0.6624
+   ],
+   "macro_f1_ci95": [
+    0.6118,
+    0.6507
+   ]
+  },
+  {
+   "model": "D_fusion|geols",
+   "valid_acc": 0.6976,
+   "valid_macro_f1": 0.6855,
+   "valid_top5": 0.9099,
+   "valid_region_acc": 0.9415,
+   "valid_mean_err_km": 71.4012,
+   "valid_within_100km": 0.7914,
+   "test_acc": 0.6387,
+   "test_macro_f1": 0.6311,
+   "test_top5": 0.8633,
+   "test_region_acc": 0.9437,
+   "test_mean_err_km": 79.6822,
+   "test_within_100km": 0.7641,
+   "acc_ci95": [
+    0.616,
+    0.6589
+   ],
+   "macro_f1_ci95": [
+    0.6077,
+    0.6485
+   ]
+  },
+  {
+   "model": "FINAL_acc: B+C+D|ls",
+   "valid_acc": 0.7076,
+   "valid_macro_f1": 0.6966,
+   "valid_top5": 0.9036,
+   "valid_region_acc": 0.9347,
+   "valid_mean_err_km": 70.6905,
+   "valid_within_100km": 0.7945,
+   "test_acc": 0.6461,
+   "test_macro_f1": 0.6374,
+   "test_top5": 0.8653,
+   "test_region_acc": 0.9383,
+   "test_mean_err_km": 82.083,
+   "test_within_100km": 0.7655,
+   "acc_ci95": [
+    0.6244,
+    0.6663
+   ],
+   "macro_f1_ci95": [
+    0.6151,
+    0.6538
+   ]
+  }
+ ],
+ "compare": {
+  "D_fusion|geols - D_fusion|ls": {
+   "acc_diff": -0.003,
+   "acc_ci95": [
+    -0.0148,
+    0.0089
+   ],
+   "km_diff": -8.2,
+   "km_ci95": [
+    -14.6,
+    -1.4
+   ]
+  },
+  "D_fusion|ls - C_phowhisper|ls": {
+   "acc_diff": 0.0573,
+   "acc_ci95": [
+    0.041,
+    0.0745
+   ],
+   "km_diff": -10.2,
+   "km_ci95": [
+    -18.5,
+    -2.4
+   ]
+  },
+  "D_fusion|ls - B_xlsr|ls": {
+   "acc_diff": 0.0666,
+   "acc_ci95": [
+    0.0508,
+    0.0834
+   ],
+   "km_diff": -38.7,
+   "km_ci95": [
+    -49.2,
+    -29.3
+   ]
+  },
+  "FINAL_acc - baseline_xlsr25_ce (02)": {
+   "acc_diff": 0.1545,
+   "acc_ci95": [
+    0.1352,
+    0.1752
+   ],
+   "km_diff": -58.0,
+   "km_ci95": [
+    -69.2,
+    -47.6
+   ]
+  },
+  "D_fusion|geols - baseline_xlsr25_ce (02)": {
+   "acc_diff": 0.1471,
+   "acc_ci95": [
+    0.1264,
+    0.1683
+   ],
+   "km_diff": -60.4,
+   "km_ci95": [
+    -71.4,
+    -49.8
+   ]
+  }
+ },
+ "confound": [
+  {
+   "subset": "all",
+   "n": 2026,
+   "baseline_xlsr25_ce (02)": 0.4916,
+   "B_xlsr|ls": 0.575,
+   "C_phowhisper|ls": 0.5844,
+   "C_phowhisper|ls ci95": [
+    0.5632,
+    0.6056
+   ],
+   "D_fusion|ls": 0.6417,
+   "D_fusion|ls ci95": [
+    0.6194,
+    0.6629
+   ],
+   "D_fusion|geols": 0.6387,
+   "FINAL_acc: B+C+D|ls": 0.6461
+  },
+  {
+   "subset": "no_place_name",
+   "n": 1846,
+   "baseline_xlsr25_ce (02)": 0.4881,
+   "B_xlsr|ls": 0.5693,
+   "C_phowhisper|ls": 0.578,
+   "C_phowhisper|ls ci95": [
+    0.5569,
+    0.6008
+   ],
+   "D_fusion|ls": 0.636,
+   "D_fusion|ls ci95": [
+    0.6143,
+    0.6587
+   ],
+   "D_fusion|geols": 0.6327,
+   "FINAL_acc: B+C+D|ls": 0.6408
+  },
+  {
+   "subset": "mentions_own_province",
+   "n": 151,
+   "baseline_xlsr25_ce (02)": 0.5033,
+   "B_xlsr|ls": 0.6026,
+   "C_phowhisper|ls": 0.6225,
+   "C_phowhisper|ls ci95": [
+    0.543,
+    0.6954
+   ],
+   "D_fusion|ls": 0.6755,
+   "D_fusion|ls ci95": [
+    0.596,
+    0.7483
+   ],
+   "D_fusion|geols": 0.6755,
+   "FINAL_acc: B+C+D|ls": 0.6821
+  },
+  {
+   "subset": "text_wrong",
+   "n": 1583,
+   "baseline_xlsr25_ce (02)": 0.4593,
+   "B_xlsr|ls": 0.549,
+   "C_phowhisper|ls": 0.5546,
+   "C_phowhisper|ls ci95": [
+    0.5313,
+    0.5787
+   ],
+   "D_fusion|ls": 0.6134,
+   "D_fusion|ls ci95": [
+    0.5894,
+    0.6368
+   ],
+   "D_fusion|geols": 0.6058,
+   "FINAL_acc: B+C+D|ls": 0.6184
+  },
+  {
+   "subset": "ltas_wrong",
+   "n": 1627,
+   "baseline_xlsr25_ce (02)": 0.4395,
+   "B_xlsr|ls": 0.5163,
+   "C_phowhisper|ls": 0.5206,
+   "C_phowhisper|ls ci95": [
+    0.4966,
+    0.5452
+   ],
+   "D_fusion|ls": 0.5808,
+   "D_fusion|ls ci95": [
+    0.5581,
+    0.6048
+   ],
+   "D_fusion|geols": 0.5759,
+   "FINAL_acc: B+C+D|ls": 0.5857
+  },
+  {
+   "subset": "text_and_ltas_wrong",
+   "n": 1290,
+   "baseline_xlsr25_ce (02)": 0.4101,
+   "B_xlsr|ls": 0.4946,
+   "C_phowhisper|ls": 0.4915,
+   "C_phowhisper|ls ci95": [
+    0.4643,
+    0.5186
+   ],
+   "D_fusion|ls": 0.5543,
+   "D_fusion|ls ci95": [
+    0.5271,
+    0.5814
+   ],
+   "D_fusion|geols": 0.5442,
+   "FINAL_acc: B+C+D|ls": 0.5597
+  }
+ ],
+ "retain_ratio": {
+  "baseline_xlsr25_ce (02)": {
+   "no_place_name": 0.993,
+   "text_wrong": 0.934,
+   "text_and_ltas_wrong": 0.834
+  },
+  "B_xlsr|ls": {
+   "no_place_name": 0.99,
+   "text_wrong": 0.955,
+   "text_and_ltas_wrong": 0.86
+  },
+  "C_phowhisper|ls": {
+   "no_place_name": 0.989,
+   "text_wrong": 0.949,
+   "text_and_ltas_wrong": 0.841
+  },
+  "D_fusion|ls": {
+   "no_place_name": 0.991,
+   "text_wrong": 0.956,
+   "text_and_ltas_wrong": 0.864
+  }
+ },
+ "per_province_acc_final": {
+  "CaoBang": 0.8,
+  "LangSon": 0.7576,
+  "QuangNinh": 0.6765,
+  "HaiPhong": 0.8788,
+  "ThaiBinh": 0.8788,
+  "NamDinh": 0.8387,
+  "PhuTho": 0.5625,
+  "ThaiNguyen": 0.5484,
+  "YenBai": 0.4242,
+  "TuyenQuang": 0.6176,
+  "HaGiang": 0.4545,
+  "LaoCai": 0.3947,
+  "LaiChau": 0.1852,
+  "SonLa": 0.6286,
+  "DienBien": 0.2857,
+  "HoaBinh": 0.9062,
+  "HaNoi": 0.931,
+  "HaiDuong": 0.6,
+  "NinhBinh": 0.9615,
+  "ThanhHoa": 0.7931,
+  "NgheAn": 0.9535,
+  "HaTinh": 0.7273,
+  "DaNang": 0.5152,
+  "DakLak": 0.5,
+  "DakNong": 0.2581,
+  "LamDong": 0.4848,
+  "HoChiMinh": 0.7647,
+  "DongNai": 0.5161,
+  "BinhDuong": 0.7576,
+  "LongAn": 0.4211,
+  "TienGiang": 0.6364,
+  "VinhLong": 0.4667,
+  "CanTho": 0.6429,
+  "DongThap": 0.4643,
+  "AnGiang": 0.4516,
+  "KienGiang": 0.4375,
+  "CaMau": 0.5135,
+  "TayNinh": 0.7941,
+  "BenTre": 0.5161,
+  "BaRiaVungTau": 0.871,
+  "QuangBinh": 0.4167,
+  "QuangTri": 0.7333,
+  "ThuaThienHue": 0.9062,
+  "QuangNgai": 0.7632,
+  "BinhDinh": 1.0,
+  "PhuYen": 0.9375,
+  "KhanhHoa": 0.7667,
+  "GiaLai": 0.7576,
+  "KonTum": 1.0,
+  "SocTrang": 0.4194,
+  "TraVinh": 0.125,
+  "NinhThuan": 0.7059,
+  "BinhThuan": 0.9394,
+  "VinhPhuc": 0.6071,
+  "HungYen": 0.9,
+  "HaNam": 0.5926,
+  "QuangNam": 0.9,
+  "BinhPhuoc": 0.5429,
+  "BacLieu": 0.0606,
+  "HauGiang": 0.7,
+  "BacKan": 0.3824,
+  "BacGiang": 1.0,
+  "BacNinh": 0.4483
+ },
+ "confusion_vs_distance": {
+  "spearman": -0.3274,
+  "p": 2.8504798612754192e-98
+ },
+ "losses": {
+  "ls": "0.3",
+  "geols": "(0.3, 200.0)"
+ },
+ "feats": {
+  "B": "full13L_wav2vec2-xls-r-300m_12s",
+  "C": "enc_PhoWhisper-large"
+ },
+ "gpu": "NVIDIA L4",
+ "total_minutes": 7.8
+}

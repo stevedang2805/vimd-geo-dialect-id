@@ -1,0 +1,1076 @@
+{
+ "results": {
+  "acoustic_ltas": {
+   "acc": 0.1969,
+   "acc_ci95": [
+    0.1797,
+    0.2147
+   ],
+   "macro_f1": 0.1815,
+   "top5": 0.4674,
+   "region_acc": 0.5607
+  },
+  "acoustic_mfcc": {
+   "acc": 0.2463,
+   "acc_ci95": [
+    0.228,
+    0.2651
+   ],
+   "macro_f1": 0.2348,
+   "top5": 0.5548,
+   "region_acc": 0.6535
+  },
+  "text_tfidf": {
+   "acc": 0.2187,
+   "acc_ci95": [
+    0.2009,
+    0.2359
+   ],
+   "macro_f1": 0.2081,
+   "top5": 0.4092,
+   "region_acc": 0.5805
+  },
+  "text_phobert": {
+   "acc": 0.1777,
+   "acc_ci95": [
+    0.1619,
+    0.1935
+   ],
+   "macro_f1": 0.133,
+   "top5": 0.4289,
+   "region_acc": 0.6713
+  },
+  "xlsr_best_layer_linear": {
+   "acc": 0.4487,
+   "acc_ci95": [
+    0.4274,
+    0.4699
+   ],
+   "macro_f1": 0.4431,
+   "top5": 0.7493,
+   "region_acc": 0.8445
+  },
+  "xlsr_wsum_linear": {
+   "acc": 0.4659,
+   "acc_ci95": [
+    0.4442,
+    0.4877
+   ],
+   "macro_f1": 0.4591,
+   "top5": 0.7739,
+   "region_acc": 0.8786
+  },
+  "xlsr_wsum_mlp": {
+   "acc": 0.4916,
+   "acc_ci95": [
+    0.4719,
+    0.5128
+   ],
+   "macro_f1": 0.4858,
+   "top5": 0.7789,
+   "region_acc": 0.8939
+  }
+ },
+ "compare": {
+  "xlsr_wsum_mlp - acoustic_ltas": {
+   "diff": 0.2947,
+   "ci95": [
+    0.2685,
+    0.3193
+   ]
+  },
+  "xlsr_wsum_mlp - acoustic_mfcc": {
+   "diff": 0.2453,
+   "ci95": [
+    0.2211,
+    0.268
+   ]
+  },
+  "xlsr_wsum_mlp - text_tfidf": {
+   "diff": 0.273,
+   "ci95": [
+    0.2468,
+    0.2971
+   ]
+  },
+  "xlsr_wsum_mlp - text_phobert": {
+   "diff": 0.3139,
+   "ci95": [
+    0.2902,
+    0.3386
+   ]
+  },
+  "xlsr_wsum_mlp - xlsr_best_layer_linear": {
+   "diff": 0.0429,
+   "ci95": [
+    0.0227,
+    0.0647
+   ]
+  },
+  "xlsr_wsum_mlp - xlsr_wsum_linear": {
+   "diff": 0.0257,
+   "ci95": [
+    0.0074,
+    0.0439
+   ]
+  }
+ },
+ "extra": {
+  "text_mentions_own_province_rate": 0.0,
+  "top_words": {
+   "CaoBang": [
+    "cao bằng",
+    "cửa khẩu",
+    "rong",
+    "rong riềng",
+    "trùng khánh",
+    "riềng",
+    "trung quốc",
+    "máy tính",
+    "đối ngoại",
+    "lễ hội"
+   ],
+   "LangSon": [
+    "thì là",
+    "lạng sơn",
+    "lạng",
+    "tỉnh lạng",
+    "cao lộc",
+    "cây đào",
+    "chuối",
+    "dân là",
+    "cái tham",
+    "đào"
+   ],
+   "QuangNinh": [
+    "quảng ninh",
+    "tỉnh quảng",
+    "quảng",
+    "ninh",
+    "nhà mới",
+    "vân đồn",
+    "cho các",
+    "khu phố",
+    "phà",
+    "cẩm phả"
+   ],
+   "HaiPhong": [
+    "hải phòng",
+    "hải",
+    "phố hải",
+    "tiên lãng",
+    "và cũng",
+    "lãng",
+    "quận",
+    "phòng đã",
+    "ông trâu",
+    "các thứ"
+   ],
+   "ThaiBinh": [
+    "thái bình",
+    "thái",
+    "chùa keo",
+    "nhà đầu",
+    "thế rồi",
+    "sốt",
+    "vũ thư",
+    "công nghiệp",
+    "người lao",
+    "ngao"
+   ],
+   "NamDinh": [
+    "bầu",
+    "bầu cử",
+    "nam định",
+    "cử",
+    "cách ly",
+    "bệnh dịch",
+    "tỉnh nam",
+    "nhân dân",
+    "ly",
+    "đề thi"
+   ],
+   "PhuTho": [
+    "phú thọ",
+    "thọ",
+    "tỉnh phú",
+    "thanh thủy",
+    "phú",
+    "thì là",
+    "hồng",
+    "động tài",
+    "dụng đó",
+    "rất mong"
+   ],
+   "ThaiNguyen": [
+    "thái nguyên",
+    "địa chỉ",
+    "trung thu",
+    "tỉnh thái",
+    "tiếng anh",
+    "chỉ số",
+    "cuộc thi",
+    "phổ yên",
+    "đây sau",
+    "nhiệt điện"
+   ],
+   "YenBai": [
+    "yên bái",
+    "bái",
+    "yên",
+    "tết",
+    "số hạnh",
+    "trồng rừng",
+    "cấy",
+    "đeo",
+    "khẩu trang",
+    "nghĩa lộ"
+   ],
+   "TuyenQuang": [
+    "tuyên quang",
+    "quang",
+    "vườn mẫu",
+    "mẫu nông",
+    "các huyện",
+    "nước ngoài",
+    "hội nông",
+    "cái",
+    "là được",
+    "cái đơn"
+   ],
+   "HaGiang": [
+    "hà giang",
+    "hà",
+    "giang",
+    "dân quân",
+    "các cái",
+    "các thầy",
+    "áo quan",
+    "chè",
+    "cấp ủy",
+    "một tháng"
+   ],
+   "LaoCai": [
+    "cai",
+    "lào cai",
+    "lào",
+    "f0",
+    "dứa",
+    "đồng chí",
+    "do dịch",
+    "áo dài",
+    "cũng đều",
+    "thì cháu"
+   ],
+   "LaiChau": [
+    "lai châu",
+    "thôn bản",
+    "truyền đối",
+    "với lại",
+    "công đoàn",
+    "lợn chết",
+    "cái dịch",
+    "séng",
+    "séng cù",
+    "với người"
+   ],
+   "SonLa": [
+    "sơn la",
+    "la",
+    "cà",
+    "tỉnh sơn",
+    "của bản",
+    "cây cà",
+    "này thì",
+    "cà phê",
+    "hiểm xã",
+    "quỹ tín"
+   ],
+   "DienBien": [
+    "điện biên",
+    "tỉnh điện",
+    "biên",
+    "và có",
+    "mường",
+    "khí thải",
+    "nuôi trên",
+    "cây cầu",
+    "về mắt",
+    "hợp tham"
+   ],
+   "HoaBinh": [
+    "hòa bình",
+    "tỉnh hòa",
+    "bộ tỉnh",
+    "rừng gỗ",
+    "bãi rác",
+    "mb",
+    "nền văn",
+    "loại quỹ",
+    "gai",
+    "cho người"
+   ],
+   "HaNoi": [
+    "không gian",
+    "đan",
+    "phố cổ",
+    "pin",
+    "áo",
+    "hà",
+    "vú",
+    "hà nội",
+    "đấy",
+    "hẹn hò"
+   ],
+   "HaiDuong": [
+    "hải dương",
+    "người nước",
+    "nghị các",
+    "tỉnh hải",
+    "linh",
+    "trường để",
+    "chung cư",
+    "nhập cảnh",
+    "điện lực",
+    "thuốc lào"
+   ],
+   "NinhBinh": [
+    "nhà sàn",
+    "mới kiểu",
+    "ninh bình",
+    "vé",
+    "viễn",
+    "là chúng",
+    "quản trị",
+    "đấy là",
+    "chuyển tiền",
+    "nhà văn"
+   ],
+   "ThanhHoa": [
+    "thanh hóa",
+    "tham nhũng",
+    "phạm tội",
+    "nhũng",
+    "thi hành",
+    "các đối",
+    "hành án",
+    "các cái",
+    "cách an",
+    "hóa sẽ"
+   ],
+   "NgheAn": [
+    "phố vinh",
+    "đang còn",
+    "các cái",
+    "vinh",
+    "nghệ an",
+    "phường xã",
+    "quy hoạch",
+    "phường",
+    "công viên",
+    "đô"
+   ],
+   "HaTinh": [
+    "các cái",
+    "hà tĩnh",
+    "rồi thì",
+    "diễn tập",
+    "hà",
+    "tĩnh",
+    "do cơ",
+    "thối",
+    "sữa mẹ",
+    "để rồi"
+   ],
+   "DaNang": [
+    "đà nẵng",
+    "nẵng",
+    "quận",
+    "bác hồ",
+    "phố đà",
+    "trẻ em",
+    "dân họ",
+    "đó mà",
+    "đà",
+    "một một"
+   ],
+   "DakLak": [
+    "buôn",
+    "ea",
+    "hai không",
+    "tay chân",
+    "khẩu súng",
+    "hội sách",
+    "không hai",
+    "và bệnh",
+    "có mua",
+    "lắk"
+   ],
+   "DakNong": [
+    "các chú",
+    "đắk nông",
+    "giải chín",
+    "công an",
+    "ném",
+    "an huyện",
+    "đắk",
+    "ném đá",
+    "em cũng",
+    "phương cũng"
+   ],
+   "LamDong": [
+    "lâm đồng",
+    "nghỉ học",
+    "đà lạt",
+    "chiêng",
+    "lạt",
+    "kabia",
+    "cồng chiêng",
+    "cồng",
+    "đoàn xã",
+    "đà"
+   ],
+   "HoChiMinh": [
+    "giá năng",
+    "tiêm",
+    "quận",
+    "điều phối",
+    "vắc xin",
+    "vắc",
+    "các bệnh",
+    "năng lực",
+    "có thể",
+    "phong tỏa"
+   ],
+   "DongNai": [
+    "đồng nai",
+    "nai",
+    "các em",
+    "các tôn",
+    "ba mẹ",
+    "thì chị",
+    "em không",
+    "khuyết",
+    "tái chế",
+    "lập nghiệp"
+   ],
+   "BinhDuong": [
+    "bình dương",
+    "tỉnh bình",
+    "dương",
+    "đồng bộ",
+    "cũng như",
+    "con thấy",
+    "tự quản",
+    "mùa khỉ",
+    "tình hình",
+    "cái phòng"
+   ],
+   "LongAn": [
+    "long an",
+    "chục triệu",
+    "hiện mô",
+    "long",
+    "táo",
+    "con sẽ",
+    "án cũng",
+    "an",
+    "biết chữ",
+    "hai ngàn"
+   ],
+   "TienGiang": [
+    "rắn",
+    "gò công",
+    "các con",
+    "xăng",
+    "số liệu",
+    "xài",
+    "dự báo",
+    "tiền giang",
+    "ngành thì",
+    "vô"
+   ],
+   "VinhLong": [
+    "tết",
+    "tết thì",
+    "khuyến mãi",
+    "ngoài trời",
+    "tiết dạy",
+    "con nông",
+    "trào này",
+    "học ngoài",
+    "kỷ luật",
+    "vĩnh long"
+   ],
+   "CanTho": [
+    "cần thơ",
+    "thơ",
+    "tiêu chí",
+    "của xã",
+    "phố cần",
+    "tuyến lộ",
+    "cái tiêu",
+    "chức sản",
+    "quan môi",
+    "mới nâng"
+   ],
+   "DongThap": [
+    "tháp",
+    "quýt",
+    "xoài",
+    "đồng tháp",
+    "cá tra",
+    "nó có",
+    "mươi héc",
+    "lũ",
+    "theo hướng",
+    "giảm được"
+   ],
+   "AnGiang": [
+    "an giang",
+    "tiếp bước",
+    "phế liệu",
+    "mấy chị",
+    "thẩm tra",
+    "phế",
+    "bước đến",
+    "số tiền",
+    "long xuyên",
+    "bảo đảm"
+   ],
+   "KienGiang": [
+    "kiên giang",
+    "dựng cầu",
+    "kiên",
+    "di tích",
+    "chùa",
+    "anh",
+    "bộ môn",
+    "lực gia",
+    "tăng khánh",
+    "tụi anh"
+   ],
+   "CaMau": [
+    "hụi",
+    "đó mới",
+    "lộ",
+    "mau",
+    "tổ ong",
+    "từ đó",
+    "clo",
+    "hóa đơn",
+    "nộp trực",
+    "thì bà"
+   ],
+   "TayNinh": [
+    "tây ninh",
+    "danh điện",
+    "định danh",
+    "ban giám",
+    "tỉnh tây",
+    "cảnh sát",
+    "dục pháp",
+    "tổ liên",
+    "tây",
+    "biến giáo"
+   ],
+   "BenTre": [
+    "hữu nghị",
+    "lương hòa",
+    "hội viên",
+    "ấp",
+    "ngay chỗ",
+    "áo bà",
+    "cái ấp",
+    "những bà",
+    "bà ba",
+    "cũng như"
+   ],
+   "BaRiaVungTau": [
+    "vũng tàu",
+    "vũng",
+    "dân vận",
+    "con đường",
+    "những phần",
+    "phú mỹ",
+    "quan chính",
+    "tôi thấy",
+    "cái mức",
+    "đề nghị"
+   ],
+   "QuangBinh": [
+    "quảng bình",
+    "lươn",
+    "hoà giải",
+    "các cái",
+    "lệ",
+    "cháo",
+    "gặt",
+    "trần xá",
+    "ni",
+    "đời thứ"
+   ],
+   "QuangTri": [
+    "làng nghề",
+    "thiên tai",
+    "quảng trị",
+    "nước thải",
+    "lũ",
+    "là là",
+    "đang còn",
+    "có cái",
+    "của trung",
+    "vụ hè"
+   ],
+   "ThuaThienHue": [
+    "huế",
+    "bão",
+    "trọ",
+    "chằng",
+    "chừ",
+    "cơn bão",
+    "ông bình",
+    "chằng chống",
+    "lào",
+    "dự trữ"
+   ],
+   "QuangNgai": [
+    "quảng ngãi",
+    "ngãi",
+    "nghĩa hiệp",
+    "sa huỳnh",
+    "mấy cái",
+    "sa",
+    "gà ác",
+    "tỉnh quảng",
+    "gà",
+    "ác"
+   ],
+   "BinhDinh": [
+    "nhơn",
+    "bưởi hữu",
+    "tháng năm",
+    "tôi đề",
+    "từng địa",
+    "mươi phần",
+    "bình định",
+    "phân loại",
+    "mọi thứ",
+    "cuộc điều"
+   ],
+   "PhuYen": [
+    "phú yên",
+    "các cái",
+    "biến áp",
+    "để mà",
+    "cho em",
+    "để rồi",
+    "nguồn thu",
+    "mà các",
+    "với lĩnh",
+    "cháy rừng"
+   ],
+   "KhanhHoa": [
+    "diên",
+    "khánh hòa",
+    "khánh",
+    "nha trang",
+    "xem được",
+    "trợ phát",
+    "nha",
+    "đề tài",
+    "tàu cá",
+    "cam ranh"
+   ],
+   "GiaLai": [
+    "gia lai",
+    "tỉnh gia",
+    "làng",
+    "đi nó",
+    "lai",
+    "cô vy",
+    "vy",
+    "thôn làng",
+    "trình giáo",
+    "trình mới"
+   ],
+   "KonTum": [
+    "ơn nhà",
+    "kon",
+    "khởi nghiệp",
+    "su",
+    "cao su",
+    "kon tum",
+    "tum",
+    "đó là",
+    "chị hố",
+    "cạo"
+   ],
+   "SocTrang": [
+    "sóc trăng",
+    "là là",
+    "trăng",
+    "tú",
+    "tăng trưởng",
+    "đường huyện",
+    "trên mười",
+    "vực một",
+    "lộ",
+    "lập tỉnh"
+   ],
+   "TraVinh": [
+    "ngày hội",
+    "trà vinh",
+    "uỷ",
+    "tỉnh trà",
+    "các hoạt",
+    "uỷ ban",
+    "đi ruộng",
+    "nó ngập",
+    "trà",
+    "nhà là"
+   ],
+   "NinhThuan": [
+    "ninh thuận",
+    "nho",
+    "cô quyên",
+    "táo",
+    "lâm sơn",
+    "cái cái",
+    "trung tá",
+    "xã lâm",
+    "tỉnh ninh",
+    "là là"
+   ],
+   "BinhThuan": [
+    "bình thuận",
+    "heo",
+    "phan",
+    "xóm làng",
+    "thanh long",
+    "phú quý",
+    "ba em",
+    "mấy chị",
+    "là em",
+    "để nuôi"
+   ],
+   "VinhPhuc": [
+    "vĩnh phúc",
+    "hóa kiểu",
+    "làng văn",
+    "vĩnh",
+    "thì là",
+    "phúc",
+    "đức bác",
+    "thiết chế",
+    "địa lý",
+    "vĩnh yên"
+   ],
+   "HungYen": [
+    "phần hội",
+    "khai giảng",
+    "hưng yên",
+    "phần lễ",
+    "một là",
+    "hưng",
+    "ngày khai",
+    "nhãn",
+    "tilt",
+    "tilt super"
+   ],
+   "HaNam": [
+    "hà nam",
+    "hà",
+    "của doanh",
+    "lộ một",
+    "tục đẩy",
+    "úng",
+    "với đảng",
+    "cái tiến",
+    "được để",
+    "tỉnh hà"
+   ],
+   "QuangNam": [
+    "quảng nam",
+    "tiên phước",
+    "mi",
+    "tam kỳ",
+    "tam",
+    "gian đến",
+    "hiền",
+    "trà",
+    "thanh hiền",
+    "tích đất"
+   ],
+   "BinhPhuoc": [
+    "trà sữa",
+    "bình phước",
+    "cũng đã",
+    "phước",
+    "rượu cần",
+    "lộc ninh",
+    "chí kiên",
+    "tết",
+    "sữa",
+    "trà"
+   ],
+   "BacLieu": [
+    "cấp giấy",
+    "tôm",
+    "giá rai",
+    "đường thủy",
+    "rai",
+    "tân phong",
+    "hơn các",
+    "thủy nội",
+    "toàn giao",
+    "khi tham"
+   ],
+   "HauGiang": [
+    "hậu giang",
+    "nhi",
+    "cái thức",
+    "giang",
+    "ráng cố",
+    "sẽ tạo",
+    "tỉnh hậu",
+    "hậu",
+    "các dịch",
+    "cô chú"
+   ],
+   "BacKan": [
+    "bắc kạn",
+    "kạn",
+    "đại hội",
+    "công đoàn",
+    "bảo là",
+    "của tổ",
+    "gia cái",
+    "những cái",
+    "quặng",
+    "động đến"
+   ],
+   "BacGiang": [
+    "bắc giang",
+    "giang",
+    "đoàn kết",
+    "sạc",
+    "bác hồ",
+    "bắc",
+    "chí thành",
+    "công an",
+    "luôn luôn",
+    "thì đã"
+   ],
+   "BacNinh": [
+    "bắc ninh",
+    "từ sơn",
+    "bắc",
+    "tình thương",
+    "các con",
+    "tỉnh bắc",
+    "có vốn",
+    "đai bốn",
+    "tác phòng",
+    "cái cái"
+   ]
+  },
+  "phobert_segmenter": "pyvi",
+  "xlsr_layer_probe": [
+   {
+    "layer": 0,
+    "valid_acc": 0.3093,
+    "test_acc": 0.2937
+   },
+   {
+    "layer": 1,
+    "valid_acc": 0.3946,
+    "test_acc": 0.3702
+   },
+   {
+    "layer": 2,
+    "valid_acc": 0.4389,
+    "test_acc": 0.4274
+   },
+   {
+    "layer": 3,
+    "valid_acc": 0.4679,
+    "test_acc": 0.4255
+   },
+   {
+    "layer": 4,
+    "valid_acc": 0.4831,
+    "test_acc": 0.4487
+   },
+   {
+    "layer": 5,
+    "valid_acc": 0.4763,
+    "test_acc": 0.4418
+   },
+   {
+    "layer": 6,
+    "valid_acc": 0.4563,
+    "test_acc": 0.4353
+   },
+   {
+    "layer": 7,
+    "valid_acc": 0.4652,
+    "test_acc": 0.4314
+   },
+   {
+    "layer": 8,
+    "valid_acc": 0.4542,
+    "test_acc": 0.4131
+   },
+   {
+    "layer": 9,
+    "valid_acc": 0.4521,
+    "test_acc": 0.3968
+   },
+   {
+    "layer": 10,
+    "valid_acc": 0.4368,
+    "test_acc": 0.3944
+   },
+   {
+    "layer": 11,
+    "valid_acc": 0.4226,
+    "test_acc": 0.3968
+   },
+   {
+    "layer": 12,
+    "valid_acc": 0.4036,
+    "test_acc": 0.3756
+   },
+   {
+    "layer": 13,
+    "valid_acc": 0.4099,
+    "test_acc": 0.3643
+   },
+   {
+    "layer": 14,
+    "valid_acc": 0.3941,
+    "test_acc": 0.3623
+   },
+   {
+    "layer": 15,
+    "valid_acc": 0.3872,
+    "test_acc": 0.3736
+   },
+   {
+    "layer": 16,
+    "valid_acc": 0.3904,
+    "test_acc": 0.3692
+   },
+   {
+    "layer": 17,
+    "valid_acc": 0.3936,
+    "test_acc": 0.3889
+   },
+   {
+    "layer": 18,
+    "valid_acc": 0.4152,
+    "test_acc": 0.3934
+   },
+   {
+    "layer": 19,
+    "valid_acc": 0.4162,
+    "test_acc": 0.3988
+   },
+   {
+    "layer": 20,
+    "valid_acc": 0.4152,
+    "test_acc": 0.3983
+   },
+   {
+    "layer": 21,
+    "valid_acc": 0.4131,
+    "test_acc": 0.3885
+   },
+   {
+    "layer": 22,
+    "valid_acc": 0.3862,
+    "test_acc": 0.3574
+   },
+   {
+    "layer": 23,
+    "valid_acc": 0.3209,
+    "test_acc": 0.2897
+   },
+   {
+    "layer": 24,
+    "valid_acc": 0.323,
+    "test_acc": 0.2962
+   }
+  ],
+  "xlsr_best_layer": 4,
+  "xlsr_wsum_linear_layer_weights": [
+   0.008100000210106373,
+   0.011300000362098217,
+   0.04399999976158142,
+   0.08049999922513962,
+   0.12929999828338623,
+   0.13670000433921814,
+   0.08160000294446945,
+   0.06279999762773514,
+   0.05310000106692314,
+   0.06270000338554382,
+   0.06710000336170197,
+   0.05460000038146973,
+   0.05040000006556511,
+   0.03909999877214432,
+   0.026900000870227814,
+   0.013399999588727951,
+   0.01269999984651804,
+   0.008700000122189522,
+   0.009800000116229057,
+   0.006800000090152025,
+   0.0066999997943639755,
+   0.006899999920278788,
+   0.007699999958276749,
+   0.009499999694526196,
+   0.009499999694526196
+  ],
+  "xlsr_wsum_mlp_layer_weights": [
+   0.01850000023841858,
+   0.0333000011742115,
+   0.05719999969005585,
+   0.06960000097751617,
+   0.0843999981880188,
+   0.09749999642372131,
+   0.07190000265836716,
+   0.06210000067949295,
+   0.05040000006556511,
+   0.0494999997317791,
+   0.049400001764297485,
+   0.044599998742341995,
+   0.0430000014603138,
+   0.03799999877810478,
+   0.032099999487400055,
+   0.025100000202655792,
+   0.025499999523162842,
+   0.019600000232458115,
+   0.022299999371170998,
+   0.01679999940097332,
+   0.017400000244379044,
+   0.016200000420212746,
+   0.016200000420212746,
+   0.019700000062584877,
+   0.01979999989271164
+  ]
+ },
+ "chance": 0.0159,
+ "n": {
+  "train": 15023,
+  "valid": 1898,
+  "test": 2026
+ },
+ "config": {
+  "xlsr": "facebook/wav2vec2-xls-r-300m",
+  "xlsr_max_sec": 12.0,
+  "phobert": "vinai/phobert-base-v2",
+  "epochs": 4
+ },
+ "gpu": "NVIDIA L4",
+ "total_minutes": 24.0
+}

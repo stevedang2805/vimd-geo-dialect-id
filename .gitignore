@@ -1,0 +1,25 @@
+# Data and large artifacts (kept on Google Drive, not in git)
+data16k/
+vimd16k/
+features/
+*.parquet
+*.flac
+*.wav
+*.npy
+*.pt
+*.ckpt
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+.DS_Store
