@@ -1,0 +1,602 @@
+{
+ "n_test": 2026,
+ "n_test_speakers": 1344,
+ "utt_per_speaker": {
+  "mean": 1.507,
+  "max": 7,
+  "share_multi": 0.339
+ },
+ "ci": {
+  "B_xlsr|ls": {
+   "acc": 0.575,
+   "acc_ci_utt": [
+    0.5523,
+    0.5958
+   ],
+   "acc_ci_spk": [
+    0.5462,
+    0.6025
+   ],
+   "macro_f1": 0.569,
+   "macro_f1_ci_spk": [
+    0.5345,
+    0.5884
+   ],
+   "km": 126.6,
+   "km_ci_utt": [
+    115.2,
+    138.5
+   ],
+   "km_ci_spk": [
+    113.7,
+    140.0
+   ],
+   "width_ratio_acc": 1.295
+  },
+  "C_phowhisper|ls": {
+   "acc": 0.5844,
+   "acc_ci_utt": [
+    0.5617,
+    0.6051
+   ],
+   "acc_ci_spk": [
+    0.557,
+    0.612
+   ],
+   "macro_f1": 0.5751,
+   "macro_f1_ci_spk": [
+    0.5437,
+    0.5951
+   ],
+   "km": 98.0,
+   "km_ci_utt": [
+    89.4,
+    107.5
+   ],
+   "km_ci_spk": [
+    88.2,
+    109.1
+   ],
+   "width_ratio_acc": 1.266
+  },
+  "D_fusion|ls": {
+   "acc": 0.6417,
+   "acc_ci_utt": [
+    0.6204,
+    0.6624
+   ],
+   "acc_ci_spk": [
+    0.6119,
+    0.6687
+   ],
+   "macro_f1": 0.6347,
+   "macro_f1_ci_spk": [
+    0.6034,
+    0.6516
+   ],
+   "km": 87.9,
+   "km_ci_utt": [
+    79.3,
+    96.6
+   ],
+   "km_ci_spk": [
+    78.1,
+    98.6
+   ],
+   "width_ratio_acc": 1.354
+  },
+  "D_fusion|geols": {
+   "acc": 0.6387,
+   "acc_ci_utt": [
+    0.616,
+    0.6589
+   ],
+   "acc_ci_spk": [
+    0.6098,
+    0.6662
+   ],
+   "macro_f1": 0.6311,
+   "macro_f1_ci_spk": [
+    0.5991,
+    0.651
+   ],
+   "km": 79.7,
+   "km_ci_utt": [
+    71.4,
+    87.9
+   ],
+   "km_ci_spk": [
+    71.2,
+    89.4
+   ],
+   "width_ratio_acc": 1.311
+  },
+  "ensemble_BCD|ls": {
+   "acc": 0.6461,
+   "acc_ci_utt": [
+    0.6244,
+    0.6663
+   ],
+   "acc_ci_spk": [
+    0.618,
+    0.6739
+   ],
+   "macro_f1": 0.6374,
+   "macro_f1_ci_spk": [
+    0.6046,
+    0.6578
+   ],
+   "km": 82.1,
+   "km_ci_utt": [
+    73.9,
+    90.9
+   ],
+   "km_ci_spk": [
+    72.7,
+    92.8
+   ],
+   "width_ratio_acc": 1.331
+  }
+ },
+ "paired": {
+  "D_fusion|geols - D_fusion|ls": {
+   "acc_diff": -0.003,
+   "acc_ci_utt": [
+    -0.0148,
+    0.0089
+   ],
+   "acc_ci_spk": [
+    -0.0146,
+    0.0091
+   ],
+   "km_diff": -8.2,
+   "km_ci_utt": [
+    -14.6,
+    -1.4
+   ],
+   "km_ci_spk": [
+    -15.3,
+    -1.2
+   ]
+  },
+  "D_fusion|ls - B_xlsr|ls": {
+   "acc_diff": 0.0666,
+   "acc_ci_utt": [
+    0.0508,
+    0.0834
+   ],
+   "acc_ci_spk": [
+    0.0488,
+    0.0859
+   ],
+   "km_diff": -38.7,
+   "km_ci_utt": [
+    -49.2,
+    -29.3
+   ],
+   "km_ci_spk": [
+    -49.5,
+    -28.0
+   ]
+  },
+  "D_fusion|ls - C_phowhisper|ls": {
+   "acc_diff": 0.0573,
+   "acc_ci_utt": [
+    0.041,
+    0.0745
+   ],
+   "acc_ci_spk": [
+    0.0378,
+    0.0774
+   ],
+   "km_diff": -10.2,
+   "km_ci_utt": [
+    -18.5,
+    -2.4
+   ],
+   "km_ci_spk": [
+    -18.3,
+    -2.1
+   ]
+  },
+  "ensemble_BCD|ls - D_fusion|ls": {
+   "acc_diff": 0.0044,
+   "acc_ci_utt": [
+    -0.0064,
+    0.0148
+   ],
+   "acc_ci_spk": [
+    -0.0069,
+    0.0151
+   ],
+   "km_diff": -5.8,
+   "km_ci_utt": [
+    -11.4,
+    -0.3
+   ],
+   "km_ci_spk": [
+    -11.5,
+    -0.1
+   ]
+  },
+  "D_fusion|geols - xlsr_wsum_mlp": {
+   "acc_diff": 0.1471,
+   "acc_ci_utt": [
+    0.1264,
+    0.1683
+   ],
+   "acc_ci_spk": [
+    0.1241,
+    0.1705
+   ],
+   "km_diff": -60.4,
+   "km_ci_utt": [
+    -71.4,
+    -49.8
+   ],
+   "km_ci_spk": [
+    -71.5,
+    -49.8
+   ]
+  }
+ },
+ "seed_level_D": {
+  "runs": [
+   {
+    "seed": 0,
+    "acc_ls": 0.5982,
+    "acc_geols": 0.616,
+    "km_ls": 101.5,
+    "km_geols": 86.9,
+    "acc_diff": 0.0178,
+    "acc_diff_ci_spk": [
+     0.0015,
+     0.0341
+    ],
+    "km_diff": -14.6,
+    "km_diff_ci_spk": [
+     -23.0,
+     -6.3
+    ]
+   },
+   {
+    "seed": 1,
+    "acc_ls": 0.6106,
+    "acc_geols": 0.6106,
+    "km_ls": 104.8,
+    "km_geols": 89.4,
+    "acc_diff": 0.0,
+    "acc_diff_ci_spk": [
+     -0.0185,
+     0.0181
+    ],
+    "km_diff": -15.4,
+    "km_diff_ci_spk": [
+     -25.2,
+     -5.6
+    ]
+   },
+   {
+    "seed": 2,
+    "acc_ls": 0.6229,
+    "acc_geols": 0.6032,
+    "km_ls": 95.2,
+    "km_geols": 87.5,
+    "acc_diff": -0.0197,
+    "acc_diff_ci_spk": [
+     -0.0371,
+     -0.003
+    ],
+    "km_diff": -7.7,
+    "km_diff_ci_spk": [
+     -16.1,
+     0.7
+    ]
+   }
+  ],
+  "ensemble_check": {
+   "ls": 0.6416584402764067,
+   "geols": 0.6386969397828233
+  }
+ },
+ "calibration": {
+  "D_fusion|ls": {
+   "ece": 0.3306,
+   "brier": 0.6192,
+   "nll": 1.8307,
+   "mean_conf": 0.3111,
+   "acc": 0.6417
+  },
+  "D_fusion|geols": {
+   "ece": 0.3207,
+   "brier": 0.617,
+   "nll": 1.7138,
+   "mean_conf": 0.3183,
+   "acc": 0.6387
+  },
+  "ensemble_BCD|ls": {
+   "ece": 0.3585,
+   "brier": 0.6345,
+   "nll": 1.8576,
+   "mean_conf": 0.2876,
+   "acc": 0.6461
+  },
+  "B_xlsr|ls": {
+   "ece": 0.3015,
+   "brier": 0.6761,
+   "nll": 2.0634,
+   "mean_conf": 0.2735,
+   "acc": 0.575
+  },
+  "C_phowhisper|ls": {
+   "ece": 0.2738,
+   "brier": 0.6451,
+   "nll": 1.9096,
+   "mean_conf": 0.3115,
+   "acc": 0.5844
+  },
+  "D_fusion|ls (từng seed, trung bình)": {
+   "ece": 0.2919,
+   "brier": 0.6283,
+   "nll": 1.884,
+   "mean_conf": 0.3187,
+   "acc": 0.6106
+  },
+  "D_fusion|geols (từng seed, trung bình)": {
+   "ece": 0.2835,
+   "brier": 0.626,
+   "nll": 1.7582,
+   "mean_conf": 0.3266,
+   "acc": 0.6099
+  }
+ },
+ "calibration_diff_D": {
+  "ece_diff": -0.0099,
+  "ece_diff_ci_spk": [
+   -0.0213,
+   0.0034
+  ],
+  "brier_diff": -0.0022,
+  "brier_diff_ci_spk": [
+   -0.0071,
+   0.0028
+  ]
+ },
+ "non_inferiority_geols_vs_ls_D": {
+  "acc_diff": -0.003,
+  "one_sided_lower_95": -0.013,
+  "ci90": [
+   -0.013,
+   0.0071
+  ],
+  "by_margin": {
+   "1.0pt": {
+    "non_inferior": false,
+    "equivalent": false
+   },
+   "1.5pt": {
+    "non_inferior": true,
+    "equivalent": true
+   },
+   "2.0pt": {
+    "non_inferior": true,
+    "equivalent": true
+   }
+  }
+ },
+ "mantel": {
+  "xlsr_wsum_mlp": {
+   "rho_mantel": -0.4194,
+   "p_perm": 0.0001,
+   "null_95": [
+    -0.0483,
+    0.0419
+   ],
+   "rho_naive_ordered_pairs": -0.3334
+  },
+  "D_fusion|ls": {
+   "rho_mantel": -0.3832,
+   "p_perm": 0.0001,
+   "null_95": [
+    -0.047,
+    0.0437
+   ],
+   "rho_naive_ordered_pairs": -0.3001
+  },
+  "D_fusion|geols": {
+   "rho_mantel": -0.4091,
+   "p_perm": 0.0001,
+   "null_95": [
+    -0.0474,
+    0.0435
+   ],
+   "rho_naive_ordered_pairs": -0.3274
+  }
+ },
+ "gender": {
+  "counts": {
+   "train": {
+    "male": 10814,
+    "female": 4209
+   },
+   "valid": {
+    "male": 1359,
+    "female": 539
+   },
+   "test": {
+    "male": 1430,
+    "female": 596
+   }
+  },
+  "chi2": 689.9,
+  "dof": 62,
+  "p": 8.651269400571768e-107,
+  "male_share_by_province": {
+   "min": 0.445,
+   "median": 0.729,
+   "max": 0.946
+  },
+  "gender_only_test_acc": 0.0217,
+  "acc_by_gender": {
+   "xlsr_wsum_mlp": {
+    "male": {
+     "n": 1430,
+     "acc": 0.4951
+    },
+    "female": {
+     "n": 596,
+     "acc": 0.4832
+    },
+    "male_minus_female": 0.0119,
+    "ci_spk": [
+     -0.044,
+     0.0704
+    ]
+   },
+   "D_fusion|ls": {
+    "male": {
+     "n": 1430,
+     "acc": 0.6357
+    },
+    "female": {
+     "n": 596,
+     "acc": 0.656
+    },
+    "male_minus_female": -0.0203,
+    "ci_spk": [
+     -0.0802,
+     0.037
+    ]
+   },
+   "D_fusion|geols": {
+    "male": {
+     "n": 1430,
+     "acc": 0.6259
+    },
+    "female": {
+     "n": 596,
+     "acc": 0.6695
+    },
+    "male_minus_female": -0.0436,
+    "ci_spk": [
+     -0.1021,
+     0.0157
+    ]
+   },
+   "ensemble_BCD|ls": {
+    "male": {
+     "n": 1430,
+     "acc": 0.6399
+    },
+    "female": {
+     "n": 596,
+     "acc": 0.6611
+    },
+    "male_minus_female": -0.0212,
+    "ci_spk": [
+     -0.0803,
+     0.036
+    ]
+   }
+  }
+ },
+ "stricter_subsets": [
+  {
+   "subset": "all",
+   "n": 2026,
+   "xlsr_wsum_mlp": 0.4916,
+   "xlsr_wsum_mlp ci_spk": [
+    0.4652,
+    0.5197
+   ],
+   "C_phowhisper|ls": 0.5844,
+   "C_phowhisper|ls ci_spk": [
+    0.5578,
+    0.6118
+   ],
+   "D_fusion|ls": 0.6417,
+   "D_fusion|ls ci_spk": [
+    0.6151,
+    0.6685
+   ],
+   "D_fusion|geols": 0.6387,
+   "D_fusion|geols ci_spk": [
+    0.6103,
+    0.6655
+   ]
+  },
+  {
+   "subset": "both_text_wrong",
+   "n": 1422,
+   "xlsr_wsum_mlp": 0.4578,
+   "xlsr_wsum_mlp ci_spk": [
+    0.4288,
+    0.4868
+   ],
+   "C_phowhisper|ls": 0.5541,
+   "C_phowhisper|ls ci_spk": [
+    0.5231,
+    0.5851
+   ],
+   "D_fusion|ls": 0.6097,
+   "D_fusion|ls ci_spk": [
+    0.5794,
+    0.6407
+   ],
+   "D_fusion|geols": 0.6041,
+   "D_fusion|geols ci_spk": [
+    0.5748,
+    0.6354
+   ]
+  },
+  {
+   "subset": "both_spectral_wrong",
+   "n": 1411,
+   "xlsr_wsum_mlp": 0.4018,
+   "xlsr_wsum_mlp ci_spk": [
+    0.3693,
+    0.4358
+   ],
+   "C_phowhisper|ls": 0.4784,
+   "C_phowhisper|ls ci_spk": [
+    0.4469,
+    0.5106
+   ],
+   "D_fusion|ls": 0.5372,
+   "D_fusion|ls ci_spk": [
+    0.5053,
+    0.5709
+   ],
+   "D_fusion|geols": 0.54,
+   "D_fusion|geols ci_spk": [
+    0.5059,
+    0.573
+   ]
+  },
+  {
+   "subset": "all_four_wrong",
+   "n": 1016,
+   "xlsr_wsum_mlp": 0.377,
+   "xlsr_wsum_mlp ci_spk": [
+    0.3407,
+    0.4123
+   ],
+   "C_phowhisper|ls": 0.4567,
+   "C_phowhisper|ls ci_spk": [
+    0.4198,
+    0.4928
+   ],
+   "D_fusion|ls": 0.5118,
+   "D_fusion|ls ci_spk": [
+    0.4744,
+    0.5488
+   ],
+   "D_fusion|geols": 0.5118,
+   "D_fusion|geols ci_spk": [
+    0.4745,
+    0.5507
+   ]
+  }
+ ],
+ "total_minutes": 6.1
+}

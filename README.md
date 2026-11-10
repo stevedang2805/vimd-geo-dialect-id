@@ -39,18 +39,18 @@ $$
 
 where *d* is the haversine distance between provincial capitals.
 
-## Main results (ViMD test set, 3-seed ensembles, 95% bootstrap CI)
+## Main results (ViMD test set, 3-seed ensembles, 95% speaker-level cluster bootstrap CI)
 
 | Model | Accuracy (%) | Macro-F1 | Top-5 (%) | Region (%) | Mean error (km) | ≤100 km (%) |
 |---|---|---|---|---|---|---|
 | Baseline: XLS-R, all layers, CE (single run) | 49.2 [47.2, 51.3] | 0.486 | – | 89.4 | – | – |
-| B: XLS-R, full utterance, LS | 57.5 [55.2, 59.6] | 0.569 | 81.1 | 88.9 | 127 | 69.2 |
-| C: PhoWhisper-large, LS | 58.4 [56.2, 60.5] | 0.575 | 84.3 | 93.0 | 98 | 71.9 |
-| D: Fusion B + C, LS | 64.2 [62.0, 66.2] | 0.635 | 85.6 | 93.3 | 88 | 75.8 |
-| **D: Fusion B + C, Geo-LS (proposed)** | 63.9 [61.6, 65.9] | 0.631 | 86.3 | **94.4** | **80** | 76.4 |
-| Ensemble B + C + D, LS | **64.6** [62.4, 66.6] | **0.637** | **86.5** | 93.8 | 82 | **76.6** |
+| B: XLS-R, full utterance, LS | 57.5 [54.6, 60.3] | 0.569 | 81.1 | 88.9 | 127 | 69.2 |
+| C: PhoWhisper-large, LS | 58.4 [55.7, 61.2] | 0.575 | 84.3 | 93.0 | 98 | 71.9 |
+| D: Fusion B + C, LS | 64.2 [61.2, 66.9] | 0.635 | 85.6 | 93.3 | 88 | 75.8 |
+| **D: Fusion B + C, Geo-LS (proposed)** | 63.9 [61.0, 66.6] | 0.631 | 86.3 | **94.4** | **80** | 76.4 |
+| Ensemble B + C + D, LS | **64.6** [61.8, 67.4] | **0.637** | **86.5** | 93.8 | 82 | **76.6** |
 
-Full numbers: [`results/final/final_report.json`](results/final/final_report.json). All intermediate experiment reports are in [`results/`](results/).
+Full numbers: [`results/final/final_report.json`](results/final/final_report.json); statistical audit (speaker-level bootstrap, seed variability, calibration, Mantel test, sex breakdown): [`results/audit/audit_report.json`](results/audit/audit_report.json). All intermediate experiment reports are in [`results/`](results/).
 
 <p align="center">
   <img src="paper/figs/en_fig_layers.png" width="48%" alt="Linear probe accuracy per layer">
