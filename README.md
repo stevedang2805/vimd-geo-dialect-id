@@ -13,14 +13,15 @@ Author: **Tho Dang** (24521715).
 
 | | ViMD paper (best, fine-tuned) | **Ours** |
 |---|---|---|
-| Macro-F1, 63 provinces (official test set) | 0.411 (PhoWhisper-base) | **0.637** (ensemble) / **0.631** (single fusion model) |
-| Accuracy | – (not reported) | **64.6%** (ensemble) / **63.9%** (single model) |
+| Macro-F1, 63 provinces (official test set) | 0.411 (PhoWhisper-base) | **0.637** (9-head ensemble) / **0.631** (fusion, 3-seed ensemble) |
+| Accuracy | – (not reported) | **64.6%** (9-head ensemble) / **63.9%** (fusion, 3-seed ensemble; 61.0% per seed) |
 | Region accuracy (North/Central/South) | – | **94.4%** |
 | Mean distance of an error to the true province | – | **80 km** |
 
-- **Frozen encoders beat fine-tuning.** A learned layer-weighted sum (SUPERB-style) over frozen XLS-R-300m and PhoWhisper-large features plus a small MLP outperforms full fine-tuning, LP-FT and CNN/Transformer frame-level heads in this low-resource setting (~240 training utterances per province).
-- **Geo-LS** keeps label smoothing's `1 − ε` mass on the true province but spreads `ε` to other provinces proportionally to `exp(−distance/τ)`. It reduces geographic error by 8–19 km in every setting tested, at no significant accuracy cost on the final model.
-- **Confound controls.** Text-only (TF-IDF, PhoBERT), spectrum-only (LTAS) baselines and place-name-free test subsets show that most of the accuracy comes from accent, not spoken place names or recording channel.
+- **Frozen encoders vs. fine-tuning.** A learned layer-weighted sum (SUPERB-style) over frozen XLS-R-300m and PhoWhisper-large features plus a small MLP outperformed the full fine-tuning, LP-FT and CNN/Transformer frame-level configurations we tried in this low-resource setting (~240 training utterances per province).
+- **Comparison caveat.** The ViMD baselines use a different protocol (fine-tuning, smaller backbones, ≤10 s segments), so the gap is not a controlled comparison.
+- **Geo-LS** keeps label smoothing's `1 − ε` mass on the true province but spreads `ε` to other provinces proportionally to `exp(−distance/τ)`. Relative to standard label smoothing it reduced geographic error by 8–19 km in every setting tested; on the final model the accuracy change was −0.3 points (95% CI −1.5 to 0.9). It is a small adaptation of distance-based soft labels (SORD, PIGEON's haversine smoothing).
+- **Confound controls.** Text-only (TF-IDF, PhoBERT), spectrum-only (LTAS) baselines and place-name-free test subsets show that explicit place names and the cues these baselines capture explain little of the accuracy. ViMD labels each recording with the province of the broadcasting station, so residual recording-source effects cannot be excluded.
 
 ## Method
 
@@ -72,6 +73,7 @@ notebooks/
   08b_frame_models_vimd.ipynb   same with 1024-d frames and full 12 s
   09_improve_vimd.ipynb         full-utterance XLS-R + PhoWhisper-large features, fusion
   10_final_verify_vimd.ipynb    final models, confound checks, paired bootstrap, figures
+  11_stat_audit_vimd.ipynb      speaker-cluster bootstrap, seed variability, ECE/Brier, non-inferiority, Mantel test, gender breakdown
 results/                        JSON reports produced by the notebooks
 paper/                          IEEE-format paper (LaTeX source, figures, PDF)
 ```
@@ -92,7 +94,7 @@ Python dependencies are listed in [`requirements.txt`](requirements.txt) (Colab 
 
 ## Limitations
 
-- Province labels are partly confounded with the recording channel (ViMD audio comes from local broadcasters). Results describe ViMD-like recordings, not arbitrary microphones.
+- Labels denote the province of the broadcasting station (interviews with local residents), not a verified speaker origin, and are partly confounded with the recording channel. Results describe ViMD-like broadcast recordings, not arbitrary microphones.
 - No out-of-domain evaluation yet.
 - Labels follow the 63-province boundaries in force before the 2025 merger; each province is represented by its capital's coordinates.
 - The comparison with the ViMD paper is not a controlled ablation: the paper fine-tunes on ≤10 s segments, while we freeze the encoders and pool over the whole utterance.
