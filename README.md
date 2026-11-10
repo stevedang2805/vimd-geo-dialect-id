@@ -74,6 +74,7 @@ notebooks/
   09_improve_vimd.ipynb         full-utterance XLS-R + PhoWhisper-large features, fusion
   10_final_verify_vimd.ipynb    final models, confound checks, paired bootstrap, figures
   11_stat_audit_vimd.ipynb      speaker-cluster bootstrap, seed variability, ECE/Brier, non-inferiority, Mantel test, gender breakdown
+  12_robustness_vimd.ipynb      5-seed objective comparison, temperature scaling, channel-perturbation tests (LTAS normalisation/swap, telephone, noise)
 results/                        JSON reports produced by the notebooks
 paper/                          IEEE-format paper (LaTeX source, figures, PDF)
 ```
