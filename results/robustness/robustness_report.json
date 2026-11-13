@@ -495,6 +495,34 @@
  },
  "channel": {
   "conditions": {
+   "ltas_own": {
+    "ls": {
+     "acc": 0.5652,
+     "acc_clean": 0.6417,
+     "acc_drop": -0.0765,
+     "acc_drop_ci_spk": [
+      -0.0976,
+      -0.0545
+     ],
+     "km": 111.1,
+     "km_change": 23.2,
+     "region_acc": 0.8983,
+     "agreement_with_clean": 0.6417
+    },
+    "geols": {
+     "acc": 0.5602,
+     "acc_clean": 0.6387,
+     "acc_drop": -0.0785,
+     "acc_drop_ci_spk": [
+      -0.101,
+      -0.0541
+     ],
+     "km": 95.4,
+     "km_change": 15.7,
+     "region_acc": 0.921,
+     "agreement_with_clean": 0.6239
+    }
+   },
    "ltas_norm": {
     "ls": {
      "acc": 0.4714,
@@ -633,5 +661,5 @@
   "ltas_profile_spread_db": 3.92,
   "note": "ltas gain clipped to ±15 dB; province profiles from validation utterances"
  },
- "total_minutes": 16.0
+ "total_minutes": 18.1
 }
