@@ -21,7 +21,7 @@ Author: **Tho Dang** (24521715).
 - **Frozen encoders vs. fine-tuning.** A learned layer-weighted sum (SUPERB-style) over frozen XLS-R-300m and PhoWhisper-large features plus a small MLP outperformed the full fine-tuning, LP-FT and CNN/Transformer frame-level configurations we tried in this low-resource setting (~240 training utterances per province).
 - **Robustness caveat.** The model depends on recording conditions: equalising each utterance's long-term spectrum lowers accuracy from 64% to 47% (about 9 points attributable to the province-average spectrum, per an own-province control), 20 dB white noise to ~30%, telephone-band audio to ~16%. It should be regarded as a classifier of clean broadcast recordings.
 - **Comparison caveat.** The ViMD baselines use a different protocol (fine-tuning, smaller backbones, ≤10 s segments), so the gap is not a controlled comparison.
-- **Geo-LS** keeps label smoothing's `1 − ε` mass on the true province but spreads `ε` to other provinces proportionally to `exp(−distance/τ)`. Relative to standard label smoothing it reduced geographic error by 8–19 km in every setting tested; on the final model the accuracy change was −0.3 points (95% CI −1.5 to 0.9). It is a small adaptation of distance-based soft labels (SORD, PIGEON's haversine smoothing).
+- **Geo-LS** keeps label smoothing's `1 − ε` mass on the true province but spreads `ε` to other provinces proportionally to `exp(−distance/τ)`. Relative to standard label smoothing it reduced geographic error by 8–26 km in every setting tested; on the final model the accuracy change was −0.3 points (95% CI −1.5 to 0.9). It applies similarity-based label smoothing with a geographic kernel; the loss form is not new (cf. SORD, PIGEON's haversine smoothing, similarity-based label smoothing).
 - **Confound controls.** Text-only (TF-IDF, PhoBERT), spectrum-only (LTAS) baselines and place-name-free test subsets show that explicit place names and the cues these baselines capture explain little of the accuracy. ViMD labels each recording with the province of the broadcasting station, so residual recording-source effects cannot be excluded.
 
 ## Method
@@ -76,6 +76,7 @@ notebooks/
   10_final_verify_vimd.ipynb    final models, confound checks, paired bootstrap, figures
   11_stat_audit_vimd.ipynb      speaker-cluster bootstrap, seed variability, ECE/Brier, non-inferiority, Mantel test, gender breakdown
   12_robustness_vimd.ipynb      5-seed objective comparison, temperature scaling, channel-perturbation tests (LTAS normalisation/swap, telephone, noise)
+  13_paired_ci_vimd.ipynb       paired speaker-level CIs for perturbation contrasts and baseline table
 results/                        JSON reports produced by the notebooks
 paper/                          IEEE-format paper (LaTeX source, figures, PDF)
 ```
