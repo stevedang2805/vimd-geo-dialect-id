@@ -110,7 +110,7 @@ Python dependencies are listed in [`requirements.txt`](requirements.txt) (Colab 
 
 ```bibtex
 @misc{dang2026geodialect,
-  title  = {Geography-Aware Province-Level Vietnamese Dialect Identification with Frozen Self-Supervised Speech Representations},
+  title  = {Geography-Aware Province-Level Vietnamese Dialect Identification with Frozen Pretrained Speech Encoders},
   author = {Dang, Tho},
   year   = {2026},
   note   = {Course project, Deep Learning in Data Science, University of Information Technology, VNU-HCM}
