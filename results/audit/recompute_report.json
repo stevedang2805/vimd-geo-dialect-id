@@ -1,0 +1,680 @@
+{
+ "geography": {
+  "n_place_terms": 101,
+  "nearest_neighbour_km": {
+   "median": 44.2,
+   "max": 112.7,
+   "min": 13.3
+  }
+ },
+ "table1": {
+  "n_utt": 18949,
+  "per_split": {
+   "train": 15023,
+   "valid": 1900,
+   "test": 2026
+  },
+  "per_split_used": {
+   "train": 15023,
+   "valid": 1898,
+   "test": 2026
+  },
+  "hours": 102.56,
+  "mean_sec": 19.49,
+  "n_speakers": 12953,
+  "spk_per_province": [
+   88,
+   309
+  ],
+  "utt_per_province": [
+   263,
+   363,
+   303.0
+  ],
+  "regions": {
+   "North": 25,
+   "Central": 19,
+   "South": 19
+  },
+  "overlap_raw": {
+   "train&valid": 0,
+   "train&test": 0,
+   "valid&test": 2
+  },
+  "overlap_after_exclude": {
+   "train&valid": 0,
+   "train&test": 0,
+   "valid&test": 0
+  },
+  "test_speakers": {
+   "n": 1344,
+   "share_multi": 0.3393,
+   "max": 7
+  }
+ },
+ "table2": {
+  "acoustic_ltas": {
+   "acc": 0.1969,
+   "macro_f1": 0.1815,
+   "region_acc": 0.5607,
+   "km": 467.63,
+   "within100": 0.2957,
+   "acc_ci_utt": [
+    0.1792,
+    0.2142
+   ],
+   "acc_ci_spk": [
+    0.1757,
+    0.2177
+   ]
+  },
+  "acoustic_mfcc": {
+   "acc": 0.2463,
+   "macro_f1": 0.2348,
+   "region_acc": 0.6535,
+   "km": 391.07,
+   "within100": 0.3682,
+   "acc_ci_utt": [
+    0.227,
+    0.266
+   ],
+   "acc_ci_spk": [
+    0.2248,
+    0.2697
+   ]
+  },
+  "text_tfidf": {
+   "acc": 0.2187,
+   "macro_f1": 0.2081,
+   "region_acc": 0.5805,
+   "km": 397.39,
+   "within100": 0.3406,
+   "acc_ci_utt": [
+    0.2014,
+    0.2374
+   ],
+   "acc_ci_spk": [
+    0.1978,
+    0.2387
+   ]
+  },
+  "text_phobert": {
+   "acc": 0.1777,
+   "macro_f1": 0.133,
+   "region_acc": 0.6713,
+   "km": 331.44,
+   "within100": 0.3524,
+   "acc_ci_utt": [
+    0.1614,
+    0.1955
+   ],
+   "acc_ci_spk": [
+    0.1579,
+    0.1985
+   ]
+  },
+  "xlsr_best_layer_linear": {
+   "acc": 0.4487,
+   "macro_f1": 0.4431,
+   "region_acc": 0.8445,
+   "km": 178.19,
+   "within100": 0.5898,
+   "acc_ci_utt": [
+    0.4269,
+    0.4704
+   ],
+   "acc_ci_spk": [
+    0.4197,
+    0.4761
+   ]
+  },
+  "xlsr_wsum_linear": {
+   "acc": 0.4659,
+   "macro_f1": 0.4591,
+   "region_acc": 0.8786,
+   "km": 152.76,
+   "within100": 0.6111,
+   "acc_ci_utt": [
+    0.4437,
+    0.4872
+   ],
+   "acc_ci_spk": [
+    0.4381,
+    0.4933
+   ]
+  },
+  "xlsr_wsum_mlp": {
+   "acc": 0.4916,
+   "macro_f1": 0.4858,
+   "region_acc": 0.8939,
+   "km": 140.04,
+   "within100": 0.6426,
+   "acc_ci_utt": [
+    0.4704,
+    0.5123
+   ],
+   "acc_ci_spk": [
+    0.4634,
+    0.5192
+   ]
+  }
+ },
+ "table7": {
+  "B": {
+   "acc": 0.575,
+   "macro_f1": 0.569,
+   "region_acc": 0.8894,
+   "km": 126.62,
+   "within100": 0.6915,
+   "acc_ci_utt": [
+    0.5533,
+    0.5958
+   ],
+   "acc_ci_spk": [
+    0.5448,
+    0.6025
+   ],
+   "top5": 0.811
+  },
+  "C": {
+   "acc": 0.5844,
+   "macro_f1": 0.5751,
+   "region_acc": 0.9304,
+   "km": 98.04,
+   "within100": 0.7192,
+   "acc_ci_utt": [
+    0.5627,
+    0.6061
+   ],
+   "acc_ci_spk": [
+    0.5543,
+    0.6118
+   ],
+   "top5": 0.8425
+  },
+  "D_ls": {
+   "acc": 0.6417,
+   "macro_f1": 0.6347,
+   "region_acc": 0.9329,
+   "km": 87.89,
+   "within100": 0.7581,
+   "acc_ci_utt": [
+    0.6199,
+    0.6619
+   ],
+   "acc_ci_spk": [
+    0.6123,
+    0.6682
+   ],
+   "top5": 0.8559
+  },
+  "D_geols": {
+   "acc": 0.6387,
+   "macro_f1": 0.6311,
+   "region_acc": 0.9437,
+   "km": 79.68,
+   "within100": 0.7641,
+   "acc_ci_utt": [
+    0.6175,
+    0.6584
+   ],
+   "acc_ci_spk": [
+    0.6102,
+    0.6655
+   ],
+   "top5": 0.8633
+  },
+  "ENS": {
+   "acc": 0.6461,
+   "macro_f1": 0.6374,
+   "region_acc": 0.9383,
+   "km": 82.08,
+   "within100": 0.7655,
+   "acc_ci_utt": [
+    0.6244,
+    0.6659
+   ],
+   "acc_ci_spk": [
+    0.6175,
+    0.6719
+   ],
+   "top5": 0.8653
+  }
+ },
+ "paired": {
+  "D_geols - D_ls": {
+   "acc": -0.003,
+   "acc_ci_spk": [
+    -0.0157,
+    0.0097
+   ],
+   "km": -8.2,
+   "km_ci_spk": [
+    -15.0,
+    -1.1
+   ]
+  },
+  "D_ls - B": {
+   "acc": 0.0666,
+   "acc_ci_spk": [
+    0.0478,
+    0.087
+   ],
+   "km": -38.73,
+   "km_ci_spk": [
+    -49.4,
+    -28.2
+   ]
+  },
+  "D_ls - C": {
+   "acc": 0.0573,
+   "acc_ci_spk": [
+    0.0377,
+    0.0775
+   ],
+   "km": -10.15,
+   "km_ci_spk": [
+    -18.8,
+    -1.9
+   ]
+  },
+  "ENS - D_ls": {
+   "acc": 0.0044,
+   "acc_ci_spk": [
+    -0.0075,
+    0.0159
+   ],
+   "km": -5.8,
+   "km_ci_spk": [
+    -11.3,
+    -0.2
+   ]
+  },
+  "D_geols - xlsr_wsum_mlp": {
+   "acc": 0.1471,
+   "acc_ci_spk": [
+    0.1245,
+    0.17
+   ],
+   "km": -60.36,
+   "km_ci_spk": [
+    -71.1,
+    -48.6
+   ]
+  }
+ },
+ "calibration_before_ts": {
+  "D_ls": {
+   "ece": 0.3306,
+   "brier": 0.6192,
+   "nll": 1.8307,
+   "mean_conf": 0.3111
+  },
+  "D_geols": {
+   "ece": 0.3207,
+   "brier": 0.617,
+   "nll": 1.7138,
+   "mean_conf": 0.3183
+  }
+ },
+ "per_province_D_geols": {
+  "BacLieu": 0.0606,
+  "TraVinh": 0.125,
+  "LaiChau": 0.1852,
+  "DakNong": 0.2581,
+  "DienBien": 0.2857,
+  "BacKan": 0.3824,
+  "LaoCai": 0.3947,
+  "QuangBinh": 0.4167,
+  "SocTrang": 0.4194,
+  "LongAn": 0.4211,
+  "YenBai": 0.4242,
+  "KienGiang": 0.4375,
+  "BacNinh": 0.4483,
+  "AnGiang": 0.4516,
+  "HaGiang": 0.4545,
+  "DongThap": 0.4643,
+  "VinhLong": 0.4667,
+  "LamDong": 0.4848,
+  "DakLak": 0.5,
+  "CaMau": 0.5135,
+  "DaNang": 0.5152,
+  "DongNai": 0.5161,
+  "BenTre": 0.5161,
+  "BinhPhuoc": 0.5429,
+  "ThaiNguyen": 0.5484,
+  "PhuTho": 0.5625,
+  "HaNam": 0.5926,
+  "HaiDuong": 0.6,
+  "VinhPhuc": 0.6071,
+  "TuyenQuang": 0.6176,
+  "SonLa": 0.6286,
+  "TienGiang": 0.6364,
+  "CanTho": 0.6429,
+  "QuangNinh": 0.6765,
+  "HauGiang": 0.7,
+  "NinhThuan": 0.7059,
+  "HaTinh": 0.7273,
+  "QuangTri": 0.7333,
+  "LangSon": 0.7576,
+  "BinhDuong": 0.7576,
+  "GiaLai": 0.7576,
+  "QuangNgai": 0.7632,
+  "HoChiMinh": 0.7647,
+  "KhanhHoa": 0.7667,
+  "ThanhHoa": 0.7931,
+  "TayNinh": 0.7941,
+  "CaoBang": 0.8,
+  "NamDinh": 0.8387,
+  "BaRiaVungTau": 0.871,
+  "HaiPhong": 0.8788,
+  "ThaiBinh": 0.8788,
+  "HungYen": 0.9,
+  "QuangNam": 0.9,
+  "HoaBinh": 0.9062,
+  "ThuaThienHue": 0.9062,
+  "HaNoi": 0.931,
+  "PhuYen": 0.9375,
+  "BinhThuan": 0.9394,
+  "NgheAn": 0.9535,
+  "NinhBinh": 0.9615,
+  "BinhDinh": 1.0,
+  "KonTum": 1.0,
+  "BacGiang": 1.0
+ },
+ "test_utts_per_province": {
+  "mean": 32.2,
+  "min": 26,
+  "max": 43
+ },
+ "table3": {
+  "all": {
+   "n": 2026,
+   "xlsr_wsum_mlp": 0.4916,
+   "C": 0.5844,
+   "D_ls": 0.6417,
+   "D_geols": 0.6387,
+   "text_tfidf": 0.2187
+  },
+  "no_place_name": {
+   "n": 1846,
+   "xlsr_wsum_mlp": 0.4881,
+   "C": 0.578,
+   "D_ls": 0.636,
+   "D_geols": 0.6327,
+   "text_tfidf": 0.1761
+  },
+  "own_province_named": {
+   "n": 151,
+   "xlsr_wsum_mlp": 0.5033,
+   "C": 0.6225,
+   "D_ls": 0.6755,
+   "D_geols": 0.6755,
+   "text_tfidf": 0.7285
+  },
+  "text_wrong": {
+   "n": 1583,
+   "xlsr_wsum_mlp": 0.4593,
+   "C": 0.5546,
+   "D_ls": 0.6134,
+   "D_geols": 0.6058,
+   "text_tfidf": 0.0
+  },
+  "ltas_wrong": {
+   "n": 1627,
+   "xlsr_wsum_mlp": 0.4395,
+   "C": 0.5206,
+   "D_ls": 0.5808,
+   "D_geols": 0.5759,
+   "text_tfidf": 0.2071
+  },
+  "text_and_ltas_wrong": {
+   "n": 1290,
+   "xlsr_wsum_mlp": 0.4101,
+   "C": 0.4915,
+   "D_ls": 0.5543,
+   "D_geols": 0.5442,
+   "text_tfidf": 0.0
+  },
+  "both_text_wrong": {
+   "n": 1422,
+   "xlsr_wsum_mlp": 0.4578,
+   "C": 0.5541,
+   "D_ls": 0.6097,
+   "D_geols": 0.6041,
+   "text_tfidf": 0.0
+  },
+  "both_spectral_wrong": {
+   "n": 1411,
+   "xlsr_wsum_mlp": 0.4018,
+   "C": 0.4784,
+   "D_ls": 0.5372,
+   "D_geols": 0.54,
+   "text_tfidf": 0.2013
+  },
+  "all_four_wrong": {
+   "n": 1016,
+   "xlsr_wsum_mlp": 0.377,
+   "C": 0.4567,
+   "D_ls": 0.5118,
+   "D_geols": 0.5118,
+   "text_tfidf": 0.0
+  }
+ },
+ "place_name_rates_test": {
+  "any": 0.0888,
+  "own": 0.0745
+ },
+ "errors_geography": {
+  "xlsr_wsum_mlp": {
+   "mean_km_wrong": 275.5,
+   "random_wrong_km": 680.7,
+   "mantel": {
+    "rho": -0.4194,
+    "p": 0.0001,
+    "null95": [
+     -0.0483,
+     0.0419
+    ]
+   }
+  },
+  "D_ls": {
+   "mean_km_wrong": 245.3,
+   "random_wrong_km": 692.4,
+   "mantel": {
+    "rho": -0.3832,
+    "p": 0.0001,
+    "null95": [
+     -0.047,
+     0.0437
+    ]
+   }
+  },
+  "D_geols": {
+   "mean_km_wrong": 220.5,
+   "random_wrong_km": 690.4,
+   "mantel": {
+    "rho": -0.4091,
+    "p": 0.0001,
+    "null95": [
+     -0.0474,
+     0.0435
+    ]
+   }
+  }
+ },
+ "gender": {
+  "female_share_test": 0.2942,
+  "chi2": 689.9,
+  "dof": 62,
+  "p": 8.651269400571768e-107,
+  "male_share": [
+   0.445,
+   0.7288,
+   0.9464
+  ],
+  "gender_only_acc": 0.0217,
+  "acc_D_geols": {
+   "male": 0.6259,
+   "female": 0.6695
+  }
+ },
+ "channel": {
+  "ls": {
+   "acc": {
+    "clean": 0.6417,
+    "ltas_own": 0.5652,
+    "ltas_norm": 0.4714,
+    "ltas_swap": 0.4684,
+    "telephone": 0.1673,
+    "noise20": 0.2883
+   },
+   "paired": {
+    "ltas_own - ltas_norm": {
+     "diff": 0.0938,
+     "ci_spk": [
+      0.0774,
+      0.1096
+     ]
+    },
+    "ltas_own - ltas_swap": {
+     "diff": 0.0967,
+     "ci_spk": [
+      0.079,
+      0.1136
+     ]
+    },
+    "ltas_swap - ltas_norm": {
+     "diff": -0.003,
+     "ci_spk": [
+      -0.0151,
+      0.01
+     ]
+    },
+    "ltas_own - clean": {
+     "diff": -0.0765,
+     "ci_spk": [
+      -0.0976,
+      -0.0545
+     ]
+    },
+    "ltas_norm - clean": {
+     "diff": -0.1703,
+     "ci_spk": [
+      -0.1934,
+      -0.1468
+     ]
+    },
+    "ltas_swap - clean": {
+     "diff": -0.1732,
+     "ci_spk": [
+      -0.1962,
+      -0.148
+     ]
+    },
+    "telephone - clean": {
+     "diff": -0.4743,
+     "ci_spk": [
+      -0.5028,
+      -0.443
+     ]
+    },
+    "noise20 - clean": {
+     "diff": -0.3534,
+     "ci_spk": [
+      -0.3818,
+      -0.3235
+     ]
+    }
+   },
+   "donor": {
+    "rate_swap": 0.0173,
+    "rate_clean": 0.0049,
+    "increase_ci_spk": [
+     0.0073,
+     0.0176
+    ],
+    "uniform_ref_all_errors": 0.0086,
+    "uniform_ref_new_errors": 0.0077
+   }
+  },
+  "geols": {
+   "acc": {
+    "clean": 0.6387,
+    "ltas_own": 0.5602,
+    "ltas_norm": 0.4788,
+    "ltas_swap": 0.4674,
+    "telephone": 0.1589,
+    "noise20": 0.3129
+   },
+   "paired": {
+    "ltas_own - ltas_norm": {
+     "diff": 0.0814,
+     "ci_spk": [
+      0.0646,
+      0.098
+     ]
+    },
+    "ltas_own - ltas_swap": {
+     "diff": 0.0928,
+     "ci_spk": [
+      0.0738,
+      0.1114
+     ]
+    },
+    "ltas_swap - ltas_norm": {
+     "diff": -0.0114,
+     "ci_spk": [
+      -0.0252,
+      0.0015
+     ]
+    },
+    "ltas_own - clean": {
+     "diff": -0.0785,
+     "ci_spk": [
+      -0.101,
+      -0.0541
+     ]
+    },
+    "ltas_norm - clean": {
+     "diff": -0.1599,
+     "ci_spk": [
+      -0.1835,
+      -0.1336
+     ]
+    },
+    "ltas_swap - clean": {
+     "diff": -0.1713,
+     "ci_spk": [
+      -0.1945,
+      -0.1471
+     ]
+    },
+    "telephone - clean": {
+     "diff": -0.4798,
+     "ci_spk": [
+      -0.5075,
+      -0.4492
+     ]
+    },
+    "noise20 - clean": {
+     "diff": -0.3258,
+     "ci_spk": [
+      -0.3547,
+      -0.297
+     ]
+    }
+   },
+   "donor": {
+    "rate_swap": 0.0183,
+    "rate_clean": 0.0054,
+    "increase_ci_spk": [
+     0.0074,
+     0.0186
+    ],
+    "uniform_ref_all_errors": 0.0086,
+    "uniform_ref_new_errors": 0.0082
+   }
+  }
+ }
+}
